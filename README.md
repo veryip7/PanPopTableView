@@ -37,6 +37,4 @@
     }
 }
 
-5. 如有不明白，可以看看demo项目，并且PanPopTableView.h文件中对各方法有比较详细的描述。
-
-6. 谢谢大家！
+5. 可以看看demo项目，PanPopTableView.h文件中对各方法也有比较详细的解释。
