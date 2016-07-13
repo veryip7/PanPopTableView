@@ -2,7 +2,7 @@
 
 2. PanPopTableView继承于UITableView，支持单个页面tableView多级数据展示的滑动返回，因iOS系统的滑动返回是支持7.0版本以上的，这里和系统一样也只支持7.0以上，如果系统版本低于7.0，使用PanPopTableView跟普通UITableView没有区别。
 
-3. 实现只有一个类：PanPopTableView
+3. 实现只有一个类：PanPopTableView       
 
 4. 使用方法（listTableView是PanPopTableView的实例）：
 
