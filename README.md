@@ -6,12 +6,14 @@
 3. 实现只有一个类：PanPopTableView
 
 4. 使用方法（listTableView是PanPopTableView的实例）：
- a. 给listTableView设置滑动返回的回调block。
+ 
+a. 给listTableView设置滑动返回的回调block。
     __weak typeof(self) weakSelf = self;
     listTableView.popReturn = ^(){
         [weakSelf backButtonClick:nil];//--------------!!!!!!!!!!!!!!
     };
- b. 将要进入下一页时调用nextPage
+ 
+b. 将要进入下一页时调用nextPage
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     City *c = currentCitys[indexPath.row];
     if (c.subCities) {//如果有子层级
@@ -19,17 +21,21 @@
     }
     return indexPath;
 }
- c. 返回上一页后调用frontPage方法，这个方法添加在返回按钮事件中。
- d. viewDidLoad中添加：
+ 
+c. 返回上一页后调用frontPage方法，这个方法添加在返回按钮事件中。
+ 
+d. viewDidLoad中添加：
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {//--------------!!!!!!!!!!!!!!
         self.navigationController.interactivePopGestureRecognizer.delegate = weakSelf;
     }
- e. viewDidAppear中调用setIsEnableSystemPopReturn设置是否禁用系统的滑动返回：
+ 
+e. viewDidAppear中调用setIsEnableSystemPopReturn设置是否禁用系统的滑动返回：
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [listTableView setIsEnableSystemPopReturn];//--------------!!!!!!!!!!!!!!
 }
- f. 在viewWillDisappear中添加：
+ 
+f. 在viewWillDisappear中添加：
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {//--------------!!!!!!!!!!!!!!
