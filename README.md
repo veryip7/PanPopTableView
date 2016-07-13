@@ -22,7 +22,7 @@ b. 将要进入下一页时调用nextPage
     return indexPath;
 }
 
-c. 返回上一页后调用frontPage方法，这个方法添加在返回按钮事件中。
+c. 返回上一页后调用frontPage方法，这个方法添加在返回按钮事件中 。
 
 d. viewDidLoad中添加：
 if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {//--------------!!!!!!!!!!!!!! self.navigationController.interactivePopGestureRecognizer.delegate = weakSelf;
