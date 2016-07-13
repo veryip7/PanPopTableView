@@ -8,10 +8,10 @@
 4. 使用方法（listTableView是PanPopTableView的实例）：
 
 a. 给listTableView设置滑动返回的回调block。
-__weak typeof(self) weakSelf = self;
-listTableView.popReturn = ^(){
-    [weakSelf backButtonClick:nil];//--------------!!!!!!!!!!!!!!
-};
+    __weak typeof(self) weakSelf = self;
+    listTableView.popReturn = ^(){
+        [weakSelf backButtonClick:nil];//--------------!!!!!!!!!!!!!!
+    };
 
 b. 将要进入下一页时调用nextPage
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
