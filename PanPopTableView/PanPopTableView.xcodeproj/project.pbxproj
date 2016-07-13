@@ -21,6 +21,7 @@
 		B87EB0091D365B3B00029573 /* wp_nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B87EB0031D365B3B00029573 /* wp_nav_back@2x.png */; };
 		B87EB00A1D365B3B00029573 /* wp_nav_back_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B87EB0041D365B3B00029573 /* wp_nav_back_sel@2x.png */; };
 		B87EB00B1D365B3B00029573 /* PanPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B87EB0071D365B3B00029573 /* PanPopTableView.m */; };
+		B87EB00D1D36650D00029573 /* help.txt in Resources */ = {isa = PBXBuildFile; fileRef = B87EB00C1D36650D00029573 /* help.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B87EB0041D365B3B00029573 /* wp_nav_back_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wp_nav_back_sel@2x.png"; sourceTree = "<group>"; };
 		B87EB0061D365B3B00029573 /* PanPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanPopTableView.h; sourceTree = "<group>"; };
 		B87EB0071D365B3B00029573 /* PanPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanPopTableView.m; sourceTree = "<group>"; };
+		B87EB00C1D36650D00029573 /* help.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = help.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				B87EB0061D365B3B00029573 /* PanPopTableView.h */,
 				B87EB0071D365B3B00029573 /* PanPopTableView.m */,
+				B87EB00C1D36650D00029573 /* help.txt */,
 			);
 			path = PanPopTableView;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				B87EAFDD1D365AF300029573 /* LaunchScreen.storyboard in Resources */,
 				B87EB00A1D365B3B00029573 /* wp_nav_back_sel@2x.png in Resources */,
+				B87EB00D1D36650D00029573 /* help.txt in Resources */,
 				B87EB0081D365B3B00029573 /* head_nav_bg_style1@2x.png in Resources */,
 				B87EAFDA1D365AF300029573 /* Assets.xcassets in Resources */,
 				B87EB0091D365B3B00029573 /* wp_nav_back@2x.png in Resources */,
