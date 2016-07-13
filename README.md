@@ -12,7 +12,7 @@
 
     __weak typeof(self) weakSelf = self;
 
-    listView.popReturn = ^(){
+    listTableView.popReturn = ^(){
 
         [weakSelf backButtonClick:nil];//--------------!!!!!!!!!!!!!!
 
