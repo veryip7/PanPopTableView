@@ -11,8 +11,11 @@
     a. 给listTableView设置滑动返回的回调block。
 
     __weak typeof(self) weakSelf = self;
+
     listView.popReturn = ^(){
+
         [weakSelf backButtonClick:nil];//--------------!!!!!!!!!!!!!!
+
     };
 
     b. 将要进入下一页时调用nextPage
